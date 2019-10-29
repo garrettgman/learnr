@@ -21,7 +21,6 @@ This tutorial will help you set up your computer to use R. It is for you if you 
 * Install R on your computer
 * Install the RStudio IDE
 * Install the `tidyverse` R package
-* Learn how to run R code
 
 You can skip this tutorial if you've already done these things.
 
@@ -35,7 +34,6 @@ question("Check all that you have NOT done:",
   answer("installed R on my computer", message = "* Install R"),
   answer("installed the RStudio IDE", message = "* Install RStudio IDE"),
   answer("installed the tidyverse R package", message = "* Install Packages"),
-  answer("used R before", message = "* Run Code"),
   answer("None of the above. I've done them all.", correct = TRUE, message = "You can skip this tutorial!"),
   type = "multiple",
   incorrect = "This tutorial is here to help! To get set up read:"
@@ -59,7 +57,7 @@ quiz(caption = "Quiz - Install R",
   question("Where do you download R?",
     answer("www.rstudio.com/download"),
     answer("[cloud.r-project.org](http://cloud.r-project.org)", correct = TRUE, message = "You can also download R from [cran.r-project.org](http://cran.r-project.org)"),
-    answer("www.r-project.org", message = "Close: www.r-project.org provides a link to one the websites above."),
+    answer("www.r-project.org", message = "Good try, but not exactly. www.r-project.org doesn't provide a download link, but it does provide a link to one the websites above."),
     answer("www.r.com"),
     allow_retry = TRUE
   ),
@@ -67,7 +65,8 @@ quiz(caption = "Quiz - Install R",
     answer("Everytime you use it", message = "This will be too often unless you use R very rarely!"),
     answer("About once a year", correct = TRUE, "A new version of R is released about once a year. Update sooner if you encounter a bug that you cannot explain."),
     answer("Never", message = "A new version of R is released about once a year. I'll assume that you are using the newest version of R, which will be the fastest version with the fewest unexpected behaviors." )
-  )
+  ),
+    allow_retry = TRUE
 )
 ```
 
